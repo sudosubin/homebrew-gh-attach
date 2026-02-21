@@ -3,7 +3,7 @@ cask "gh-attach" do
   name "gh-attach"
   desc "GitHub user attachment upload CLI for gh"
   homepage "https://github.com/sudosubin/gh-attach"
-  version "0.1.0"
+  version "0.1.1"
 
   livecheck do
     skip "Auto-generated on release."
@@ -14,22 +14,22 @@ cask "gh-attach" do
   on_macos do
     on_intel do
       url "https://github.com/sudosubin/gh-attach/releases/download/v#{version}/gh-attach_#{version}_darwin_amd64.tar.gz"
-      sha256 "9c0d7a29ace7ada49334f1af73778f58e67be17ece26e6722922d94b7b60efe2"
+      sha256 "aefc1fb871bb287ace4bb367b854a0e1fc3edd033908a3770811493b30076fa1"
     end
     on_arm do
       url "https://github.com/sudosubin/gh-attach/releases/download/v#{version}/gh-attach_#{version}_darwin_arm64.tar.gz"
-      sha256 "31b21c6228f8b565196aecd5e2d5d581d9e3f2468ed15b5b9292d8c6c6813e8d"
+      sha256 "c98c4932f2dd7ba3a2364130d80b41f92bc8b161897bd80babc00f4ccc361483"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/sudosubin/gh-attach/releases/download/v#{version}/gh-attach_#{version}_linux_amd64.tar.gz"
-      sha256 "4f693a5f1b82b46ab549ecf8078b4d7aa2c862f4d50659b165d171f370728153"
+      sha256 "edcecb812320cb1988069bbb8a8e313402506e0fe7ee1e277fecaaf5044f401a"
     end
     on_arm do
       url "https://github.com/sudosubin/gh-attach/releases/download/v#{version}/gh-attach_#{version}_linux_arm64.tar.gz"
-      sha256 "248b9243309b109657e5550d4a435d9dcf92e1da19a882f01cf42f618a9a9453"
+      sha256 "10157f05e5ba8a8334718e6f785f97253845fb61b1b14938929da8b1e735dab2"
     end
   end
 
