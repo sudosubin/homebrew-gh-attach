@@ -3,33 +3,35 @@ cask "gh-attach" do
   name "gh-attach"
   desc "GitHub user attachment upload CLI for gh"
   homepage "https://github.com/sudosubin/gh-attach"
-  version "0.1.1"
+  version "0.1.2"
 
   livecheck do
     skip "Auto-generated on release."
   end
 
-  binary "gh-attach"
-
   on_macos do
     on_intel do
-      url "https://github.com/sudosubin/gh-attach/releases/download/v#{version}/gh-attach_#{version}_darwin_amd64.tar.gz"
-      sha256 "aefc1fb871bb287ace4bb367b854a0e1fc3edd033908a3770811493b30076fa1"
+      url "https://github.com/sudosubin/gh-attach/releases/download/v#{version}/gh-attach-darwin-amd64"
+      sha256 "eff2b26fe5cefea7b557812313fd6b55269bd90db33983bd5bbc5649f658e897"
+      binary "gh-attach-darwin-amd64", target: "gh-attach"
     end
     on_arm do
-      url "https://github.com/sudosubin/gh-attach/releases/download/v#{version}/gh-attach_#{version}_darwin_arm64.tar.gz"
-      sha256 "c98c4932f2dd7ba3a2364130d80b41f92bc8b161897bd80babc00f4ccc361483"
+      url "https://github.com/sudosubin/gh-attach/releases/download/v#{version}/gh-attach-darwin-arm64"
+      sha256 "a1fd2ea82b762634cdb2dc89dc0a2dcdd85ff4080113eab506d718b238618dbd"
+      binary "gh-attach-darwin-arm64", target: "gh-attach"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/sudosubin/gh-attach/releases/download/v#{version}/gh-attach_#{version}_linux_amd64.tar.gz"
-      sha256 "edcecb812320cb1988069bbb8a8e313402506e0fe7ee1e277fecaaf5044f401a"
+      url "https://github.com/sudosubin/gh-attach/releases/download/v#{version}/gh-attach-linux-amd64"
+      sha256 "aaed9e2b9a9add69ffa38ecd9c6aba38b1ef4f6694df2c1743c178d5d11b8805"
+      binary "gh-attach-linux-amd64", target: "gh-attach"
     end
     on_arm do
-      url "https://github.com/sudosubin/gh-attach/releases/download/v#{version}/gh-attach_#{version}_linux_arm64.tar.gz"
-      sha256 "10157f05e5ba8a8334718e6f785f97253845fb61b1b14938929da8b1e735dab2"
+      url "https://github.com/sudosubin/gh-attach/releases/download/v#{version}/gh-attach-linux-arm64"
+      sha256 "b3a7c022639b296608419ae767f6eefe2890686422ec202eafed1965ecfed117"
+      binary "gh-attach-linux-arm64", target: "gh-attach"
     end
   end
 
